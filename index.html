@@ -5,18 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>up-Valley-Forge • bythe9sdesigns</title>
 <style>
-  body { font-family: monospace; background: #111; color: #ddd; padding: 20px; line-height: 1.6; }
+  body { font-family: monospace; background: #111; color: #ddd; padding: 15px; line-height: 1.6; margin: 0; }
   a { color: #8c8; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  nav { position: sticky; top: 0; background: #111; padding: 10px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
-  nav a { margin-right: 20px; }
-  section { margin-bottom: 60px; padding: 20px; background: #1a1a1a; border: 1px solid #333; }
-  h1, h2 { color: #8c8; }
-  .under { font-style: italic; color: #666; text-align: center; margin: 40px 0; }
+  nav { position: sticky; top: 0; background: #111; padding: 10px 0; border-bottom: 1px solid #333; margin-bottom: 30px; z-index: 10; }
+  nav a { margin: 0 15px; font-size: 1em; }
+  section { margin-bottom: 50px; padding: 20px; background: #1a1a1a; border: 1px solid #333; }
+  h1, h2 { color: #8c8; margin-top: 0; }
+  .under { font-style: italic; color: #666; text-align: center; margin: 30px 0; font-size: 0.9em; }
   .crew { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-  .member { flex: 1; min-width: 250px; text-align: center; padding: 15px; background: #222; }
+  .member { flex: 1 1 280px; text-align: center; padding: 15px; background: #222; min-width: 250px; }
   .hotiron { margin: 15px 0; }
-  footer { text-align: center; color: #555; font-size: 0.8em; margin-top: 60px; }
+  footer { text-align: center; color: #555; font-size: 0.8em; margin-top: 60px; padding: 20px; }
+
+  /* Responsive tweaks – phone first, breathe wide */
+  @media (max-width: 768px) {
+    nav { padding: 10px; text-align: center; }
+    nav a { display: block; margin: 10px 0; font-size: 1.1em; }
+    section { padding: 15px; }
+    .under { font-size: 0.8em; }
+    .twitter-timeline { height: 500px !important; }
+  }
+  @media (min-width: 769px) {
+    nav
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>up-Valley-Forge • bythe9sdesigns</title>
+<style>
+  body { font-family: monospace; background: #111; color: #ddd; padding: 15px; line-height: 1.6; margin: 0; }
+  a { color: #8c8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { position: sticky; top: 0; background: #111; padding: 10px 0; border-bottom: 1px solid #333; margin-bottom: 30px; z-index: 10; }
+  nav a { margin: 0 15px; font-size: 1em; }
+  section { margin-bottom: 50px; padding: 20px; background: #1a1a1a; border: 1px solid #333; }
+  h1, h2 { color: #8c8; margin-top: 0; }
+  .under { font-style: italic; color: #666; text-align: center; margin: 30px 0; font-size: 0.9em; }
+  .crew { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .member { flex: 1 1 280px; text-align: center; padding: 15px; background: #222; min-width: 250px; }
+  .hotiron { margin: 15px 0; }
+  footer { text-align: center; color: #555; font-size: 0.8em; margin-top: 60px; padding: 20px; }
+
+  /* Responsive tweaks – phone first, breathe wide */
+  @media (max-width: 768px) {
+    nav { padding: 10px; text-align: center; }
+    nav a { display: block; margin: 10px 0; font-size: 1.1em; }
+    section { padding: 15px; }
+    .under { font-size: 0.8em; }
+    .twitter-timeline { height: 500px !important; }
+  }
+  @media (min-width: 769px) {
+    nav a { display: inline-block; }
+    .twitter-timeline { height: 700px !important; }
+  }
+  /* X embed overflow hush */
+  .twitter-timeline { width: 100% !important; overflow: hidden; }
 </style>
 </head>
 <body>
@@ -68,7 +114,6 @@
   <p>calistogakid94515@gmail.com • or DM on X</p>
   <p>Social hub:</p>
   <a href="https://x.com/Calistogakid9s">X @Calistogakid9s</a>
-  <!-- Embedded X timeline hub below -->
   <div style="margin-top: 30px;">
     <a class="twitter-timeline" data-theme="dark" data-height="600" href="https://twitter.com/Calistogakid9s">New media pours @Calistogakid9s</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
